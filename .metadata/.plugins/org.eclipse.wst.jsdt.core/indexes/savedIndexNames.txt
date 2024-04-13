@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+D:\FULLSTACK\ASHOKIT\SERVLETS\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

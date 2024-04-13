@@ -1,0 +1,25 @@
+ SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		
+		  Scanner sc =new Scanner(System.in);
+		  System.out.println("enter your dob [yyyy-MM-dd] :");
+		  String birthdateStr=sc.next();
+		  System.out.println(birthdateStr);
+		  
+		  Date birthdate = null;
+		  
+		  birthdate = dateFormat.parse(birthdateStr);
+		  
+		  // Calculate age
+	      Date currentDate = new Date();
+	      long ageInMillis = currentDate.getTime() - birthdate.getTime();
+	      int age = (int) (ageInMillis / (1000L * 60 * 60 * 24 * 365));
+	      boolean isEligible = age >= 18;
+	      
+	      if(isEligible)
+	      {
+	    	  System.out.println("your eligibile for vote"+age);
+	      }
+	      else
+	      {
+	    	  System.out.println("your not eligible for vote");
+	      }
